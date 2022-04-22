@@ -28,28 +28,28 @@
                   <span class="line line2"></span>
                   <span class="line line3"></span>
                </div>
-               <ul class="menu-items">
-                  <li><a href="index.html">Home</a></li>
-                  <li><a href="about.html">About</a></li>
-                  <li><a href="services.html">Services</a></li>
-                  <li><a href="portfolio.html">Portfolio</a></li>
-                  <li><a class="logo2" href="index.html"><img alt="Artisly Logo" src="images/artisly-logo-02.png" width="100"></a></li>
-                  <li><a href="#">Shop</a></li>
-                  <li><a href="contact.html">Contact</a></li>
-                  <li><a href="quote.html">Quote</a></li>
-                  <li><a class="lan2" href="#">EN/FR</a></li>
-               </ul>
-               <a class="logo" href="index.html"><img alt="Artisly Logo" src="images/artisly-logo.png" width="80"></a>
-               <a class="cart" href="#"><i class="im im-shopping-cart"></i></a>
-               <a class="share" href="#social-media"><i class="im im-share"></i></a>
-               <a class="lan" href="#">EN/FR</a>
-            </div>
-         </nav>
-         <div class="body_container">
-            <main id="top">
-               <div class="scroll-mobile">
-                  <a class="scroll-btn" href="#top"><i class="im im-arrow-up"></i></a>
-               </div>
+               <ul class="menu-items" role="menubar">
+                <li><a href="index.html" aria-label="Click to take you to the home page">Home</a></li>
+                <li><a href="about.html" aria-label="Click to take you to the about page">About</a></li>
+                <li><a href="services.html" aria-label="Click to take you to the list of services offered">Services</a></li>
+                <li><a href="portfolio.html"aria-label="Click to take you to the portfolio">Portfolio</a></li>
+                <li><a class="logo2" href="index.html" aria-label="Click to take you to the home page"><img alt="Artisly Logo" src="images/artisly-logo-02.png" width="100"></a></li>
+                <li><a href="#" aria-label="Click to take you to the official Artisly shopify store">Shop</a></li>
+                <li><a href="contact.html" aria-label="Click to take you to the contact page">Contact</a></li>
+                <li><a href="quote.html" aria-label="Click to take you to the quote form">Quote</a></li>
+                <li><a class="lan2" href="#" aria-label="Click to change the language">EN/FR</a></li>
+             </ul>
+             <a class="logo" href="index.html"><img alt="Artisly Logo" src="images/artisly-logo.png" width="80"></a>
+             <a class="cart" href="#"><i class="im im-shopping-cart"></i></a>
+             <a class="share" href="#social-media"><i class="im im-share"></i></a>
+             <a class="lan" href="#">EN/FR</a>
+          </div>
+       </nav>
+       <div class="body_container">
+          <main id="top">
+             <div class="scroll-mobile">
+                <a class="scroll-btn" href="#top" aria-label="Click to take you to the top of the page"><i class="im im-arrow-up"></i></a>
+             </div>
                <div class="intro">
                   <h2>Quote Form</h2>
                   <div class="home-dec">
@@ -59,90 +59,90 @@
                <div class="contact-page">
                   <!-- sending the viewer back to the top of the index page after submitting the form-->
                   <!-- posting the information from the form to the index page-->
-                  <form action="index.html" method="post">
+                  <form action="index.html" method="post" itemscope itemtype="https://schema.org/Person">
                      <div class="formbox">
                         <h1>GET A QUOTE FOR YOUR PROJECT</h1>
                         <p> Want to get in touch? Fill out the contact form to send me a message or any questions you may have.</p>
                      </div>
                      <!-- Contact page form -->
-                     <label for="username">Your Name</label>
+                     <label itemprop="name" for="username">Your Name</label>
                      <input type="text" id="username" name="username" required>
-                     <label for="email">Your Email</label>
+                     <label itemprop="email" for="email">Your Email</label>
                      <input type="text" id="email" name="email" required>
-                     <label for="phone">Phone Number</label>
+                     <label itemprop="telephone" for="phone">Phone Number</label>
                      <input type="tel" id="phone" name="phone" required>
                      <label for="message">Project Details</label>
                      <textarea id="message" name="message" style="height:200px" required></textarea>
                      <label for="message">Other (Questions or Concerns)</label>
                      <textarea id="questions" name="questions" style="height:200px"></textarea>
                      <!-- added a submit button -->
-                     <input class="sendbutton" type="submit" name="submit" id="submit" value="Send">
+                     <input role="button" class="sendbutton" type="submit" name="submit" id="submit" value="Send">
                   </form>
                </div>
             </main>
             <div class="footer-img">
                <img src="images/footer2.png" alt="footer" width="1200">
             </div>
-            <div class="footer_info">
+            <div class="footer_info" role="contentinfo">
                <div class="motto">
                   <h4>Designs that Inspire</h4>
                </div>
                <section class="connected" id="social-media">
-                  <h3>Stay Connected</h3>
-                  <div class="sm">
-                     <div class="line1">
-                        <a href="#" class="fa fa-facebook"></a>
-                        <a href="#" class="fa fa-instagram"></a>
-                        <a href="#" class="fa fa-linkedin"></a>
-                     </div>
-                     <div class="line2">
-                        <a href="#" class="fa fa-wordpress"></a>
-                        <a href="#" class="fa fa-behance"></a>
-                     </div>
-                  </div>
-               </section>
-               <section class="quick-serv">
-                  <h3>Services</h3>
-                  <ul class="web-links">
-                     <li><a href="services.html">Branding</a></li>
-                     <li><a href="services.html">Web Design</a></li>
-                     <li><a href="services.html">SEO</a></li>
-                     <li><a href="services.html">Photography</a></li>
-                     <li><a href="services.html">Video Production</a></li>
-                     <li><a href="services.html">Animated Visuals</a></li>
-                     <li><a href="services.html">Commissions</a></li>
-                     <li><a href="services.html">Print</a></li>
-                  </ul>
-               </section>
-               <section class="more-links">
-                  <h3>Additional Links</h3>
-                  <ul class="web-links">
-                     <li><a href="about.html">About</a></li>
-                     <li><a href="services.html">Services</a></li>
-                     <li><a href="portfolio.html">Portfolio</a></li>
-                     <li><a href="#">Shop</a></li>
-                     <li><a href="contact.html">Contact</a></li>
-                     <li><a href="quote.html">Ask for a Quote</a></li>
-                  </ul>
-               </section>
-               <div class="artisly-contact">
-                  <a class="footer-logo" href="index.html"><img alt="Artisly Logo" src="images/artisly-logo.png" width="600"></a>
-                  <ul class="web-links">
-                     <li><i class="im im-mail"></i> artislydesigns@gmail.com</li>
-                     <li><i class="im im-phone"></i> 613-315-5753</li>
-                     <li><i class="im im-globe"></i> Ottawa, ON, Canada</li>
-                  </ul>
-               </div>
-            </div>
-            <footer>
-               <div class="footer_container">
-                  <a class="copyright" href="index.html"><img alt="Artisly Logo" src="images/artisly-logo.png" width="100"></a> 
-                  <p><strong><small>&copy; Victoria Rodgers 2022. All Rights Reserved</small>.</strong></p>
-                  <p><small><sup>*</sup>Note: This webpage was created within the bounds of the course MTM6201_020 at Algonquin College.</small></p>
-               </div>
-            </footer>
-         </div>
-      </div>
-   </body>
+                <h3>Stay Connected</h3>
+                <div class="sm">
+                   <div class="line1">
+                      <a href="#" aria-label="Click to take you to the Artisly facebook page" class="fa fa-facebook"></a>
+                      <a href="#" aria-label="Click to take you to the Artisly instagram page" class="fa fa-instagram"></a>
+                      <a href="#" aria-label="Click to take you to the Artisly linked-in" class="fa fa-linkedin"></a>
+                   </div>
+                   <div class="line2">
+                      <a href="#" aria-label="Click to take you to the Artisly wordpress website" class="fa fa-wordpress"></a>
+                      <a href="#" aria-label="Click to take you to the Artisly behance page" class="fa fa-behance"></a>
+                   </div>
+                </div>
+             </section>
+             <section class="quick-serv">
+                <h3>Services</h3>
+                <ul class="web-links">
+                   <li><a href="services.html" aria-label="Click to take you to the list of services offered">Branding</a></li>
+                   <li><a href="services.html" aria-label="Click to take you to the list of services offered">Web Design</a></li>
+                   <li><a href="services.html" aria-label="Click to take you to the list of services offered">SEO</a></li>
+                   <li><a href="services.html" aria-label="Click to take you to the list of services offered">Photography</a></li>
+                   <li><a href="services.html" aria-label="Click to take you to the list of services offered">Video Production</a></li>
+                   <li><a href="services.html" aria-label="Click to take you to the list of services offered">Animated Visuals</a></li>
+                   <li><a href="services.html" aria-label="Click to take you to the list of services offered">Commissions</a></li>
+                   <li><a href="services.html" aria-label="Click to take you to the list of services offered">Print</a></li>
+                </ul>
+             </section>
+             <section class="more-links">
+                <h3>Additional Links</h3>
+                <ul class="web-links">
+                   <li><a href="about.html" aria-label="Click to take you to the about page">About</a></li>
+                   <li><a href="services.html" aria-label="Click to take you to the list of services offered">Services</a></li>
+                   <li><a href="portfolio.html"aria-label="Click to take you to the portfolio page">Portfolio</a></li>
+                   <li><a href="#"aria-label="Click to take you to the official Artisly shopify store">Shop</a></li>
+                   <li><a href="contact.html"aria-label="Click to take you to the contact page">Contact</a></li>
+                   <li><a href="quote.html"aria-label="Click to take you to the quote form">Ask for a Quote</a></li>
+                </ul>
+             </section>
+             <div class="artisly-contact">
+                <a class="footer-logo" href="index.html"aria-label="Click to take you to the home page"><img alt="Artisly Logo" src="images/artisly-logo.png" width="600"></a>
+                <ul class="web-links" itemscope itemtype="https://schema.org/Person">
+                  <li><i itemprop="email" class="im im-mail"></i> artislydesigns@gmail.com</li>
+                  <li><i itemprop="telephone" class="im im-phone"></i> 613-315-5753</li>
+                  <li><i itemprop="address" class="im im-globe"></i> Ottawa, ON, Canada</li>
+                </ul>
+             </div>
+          </div> 
+          <footer>
+             <div class="footer_container" itemscope itemtype="https://schema.org/ImageObject">
+                <a itemprop="copyrightNotice" class="copyright" href="index.html"aria-label="Click to take you to the home page"><img alt="Artisly Logo" src="images/artisly-logo.png" width="100"></a> 
+                <p><strong><small>&copy; Victoria Rodgers 2022. All Rights Reserved</small>.</strong></p>
+                <p><small><sup>*</sup>Note: This webpage was created within the bounds of the course MTM6201_020 at Algonquin College.</small></p>
+             </div>
+          </footer>
+       </div>
+    </div>
+ </body>
 </html>
 <!-- End of code-->   

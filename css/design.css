@@ -48,6 +48,9 @@ table {
 /*___________________________________________________________________________________________
                                     Start of Website
 _____________________________________________________________________________________________*/
+/*___________________________________________________________________________________________                                    
+    Navbar Code inspired from @alvarotrigo Code https://codepen.io/alvarotrigo/pen/XWejzjR 
+_____________________________________________________________________________________________*/
 *, *::after, *::before {
   box-sizing: border-box;
   padding: 0;
@@ -66,6 +69,7 @@ html {
 }
 body {
   font-family: 'Open Sans', sans-serif;
+  line-height: 1.5rem;
 }
 .navbar {
   box-shadow: 0px 5px 10px 0px #aaa;
@@ -209,17 +213,20 @@ footer{
 }
 @keyframes lightup{
   0% {
-      background: #A288E3
+      background: #A288E3 
   }
   50% {
-      background: #F7931E
+      background: #F7931E 
   }
   100% {
       background: #204627;
       color: #fff;
   }
 }
-@media (max-width: 768px) {
+/*___________________________________________________________________________________________
+                                  Mobile First
+_____________________________________________________________________________________________*/
+@media screen and (max-width: 768px) {
   .navbar-container input[type="checkbox"], .navbar-container .hamburger-lines {
       display: block;
   }
@@ -384,12 +391,12 @@ footer{
       width: 100%;
   }
 }
-@media (max-width: 500px) {
+/*___________________________________________________________________________________________
+                                        Tablet
+_____________________________________________________________________________________________*/
+@media screen and (max-width: 500px) {
   html {
       font-size: 65%;
-  }
-  .navbar .menu-items li{
-      font-size: 1.6rem;
   }
   .logo {
       position: absolute;
@@ -400,7 +407,14 @@ footer{
       font-size: 1.8rem;
       font-weight: 500;
   }
+  .column {
+    flex: 100%;
+    max-width: 100%;
+  }
 }
+/*___________________________________________________________________________________________
+                                    Desktop
+_____________________________________________________________________________________________*/
 @media screen and (min-width:769px) {
   .navbar input[type="checkbox"], .navbar .hamburger-lines {
       display: none;
@@ -481,7 +495,10 @@ footer{
       display: none;
   }
 }
-@media screen and (min-width:375px) and (max-width:1050px){
+/*___________________________________________________________________________________________
+                                    Tablet
+_____________________________________________________________________________________________*/
+@media screen and (max-width:1050px){
   .quote-mobile{
       position: fixed;
       bottom: 0;
@@ -634,13 +651,16 @@ footer{
 }
 @keyframes fade {
   from {
-      opacity: .4
+      opacity: .4 
   }
   to {
-      opacity: 1
+      opacity: 1 
   }
 }
-@media (max-width: 768px) {
+/*___________________________________________________________________________________________
+                                    Mobile
+_____________________________________________________________________________________________*/
+@media screen and (max-width: 768px) {
   .home-dec{
       display: none;
   }
@@ -661,6 +681,9 @@ footer{
       display: none;
   }
 }
+/*___________________________________________________________________________________________
+                                    Desktop
+_____________________________________________________________________________________________*/
 @media screen and (min-width:769px) {
   .small-logo{
       float: left;
@@ -718,6 +741,7 @@ footer{
   text-align: center;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: auto auto;
+  line-height: 2.8rem;
 }
 .seperator2{
   padding: 40px;
@@ -730,7 +754,10 @@ footer{
   position: absolute;
   left: 0;
 }
-@media (max-width: 768px) {
+/*___________________________________________________________________________________________
+                                    Mobile
+_____________________________________________________________________________________________*/
+@media screen and (max-width: 768px) {
   .intro{
       margin-top: 20%;
   }
@@ -756,6 +783,9 @@ footer{
       padding: 70px 0;
   }
 }
+/*___________________________________________________________________________________________
+                                    Tablet
+_____________________________________________________________________________________________*/
 @media screen and (min-width:769px) and (max-width:1050px){
   .bio{
       display: flex;
@@ -765,6 +795,9 @@ footer{
       width: 100%;
   }
 }
+/*___________________________________________________________________________________________
+                                    Desktop
+_____________________________________________________________________________________________*/
 @media screen and (min-width:769px) {
   .space{
       padding: 100px 0;
@@ -808,7 +841,10 @@ footer{
   grid-template-rows: 1fr 1fr 1fr 1fr;
   gap: 10%;
 }
-@media (max-width: 768px) {
+/*___________________________________________________________________________________________
+                                    Mobile
+_____________________________________________________________________________________________*/
+@media screen and (max-width: 768px) {
   .branding-nav{
       display: flex;
       flex-direction: column;
@@ -952,18 +988,24 @@ footer{
   vertical-align: middle;
   width: 100%;
 }
-@media screen and (max-width: 800px) {
+/*___________________________________________________________________________________________
+                              Portfolio Images Grid
+_____________________________________________________________________________________________*/
+@media screen and (max-width: 768px) {
   .column {
       flex: 50%;
       max-width: 50%;
   }
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 500px) {
   .column {
       flex: 100%;
       max-width: 100%;
   }
 }
+/*___________________________________________________________________________________________
+                              Desktop
+_____________________________________________________________________________________________*/
 input[type=text], input[type=tel], select, textarea {
   width: 100%;
   padding: 12px;
@@ -994,9 +1036,4 @@ input[type=submit]:hover {
 .formbox{
   padding-bottom: 60px;
   text-align: center;
-}
-@media (max-width: 768px) {
-  #quote-quote{
-      display: none;
-  }
 }
