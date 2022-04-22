@@ -9,3 +9,9 @@ I opted to use images in between certain sections, as I was limited on time. Alt
 With the help of @alvarotrigo (https://codepen.io/alvarotrigo/pen/XWejzjR) I used the essential aspects of their code to form my own nav, that I re-designed to look more like the prototypes. 
                                     
 I changed some parts of the website either because of the limitations of the code. However, there are some parts that I changed based off the feedback I received from my User Experience design class teacher. 
+
+Assets Used: 
+
+Fonts: Open Sans and Cinzel Decorative from Google Fonts
+
+Javascript code was from @alvarotrigo (https://codepen.io/alvarotrigo/pen/XWejzjR) and the W3 schools website 
