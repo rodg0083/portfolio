@@ -7,8 +7,10 @@ While testing some features, is that using coding libraries such as bootstrap is
 I had a lot of difficulty with the background designs, I decided to use images for the overall background designs to save on time and resources. However, due to the designs being in such a specific place in accordance with the text I had a lot of difficult with the layout of the website. I tried various css positions (ex absolute, relative, fixed), various media queries and using img and background-image in css. Unfortunately, most of my attempts did not really work or they would work but only to a certain extent in which if I were to add another element to the page (ex text) the whole layout would shift and I would have to start over again. 
 I opted to use images in between certain sections, as I was limited on time. Although I did have to re-draw those images several times to play around with the spacing of the page. 
 With the help of @alvarotrigo (https://codepen.io/alvarotrigo/pen/XWejzjR) I used the essential aspects of their code to form my own nav, that I re-designed to look more like the prototypes. 
-                                    
-I changed some parts of the website either because of the limitations of the code. However, there are some parts that I changed based off the feedback I received from my User Experience design class teacher. 
+
+Due to the limitation of time there are some buttons that are not linked such as the shop button, the language change button, the form submit button and the social media links.
+
+I changed some parts of the website because of the limitations of my knowledge of code. However, there are some parts that I changed based off the feedback I received from my User Experience design class teacher. Such as the layout of the services page. 
 
 Assets Used: 
 
